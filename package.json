@@ -1,0 +1,10 @@
+{
+  "name": "orb-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy:opsepolia": "forge script script/DeployOrb.s.sol:DeployOrb --rpc-url $OPTIMISM_SEPOLIA_RPC_URL --broadcast --verify -vvvv",
+    "deploy:opmainnet": "forge script script/DeployOrb.s.sol:DeployOrb --rpc-url $OPTIMISM_MAINNET_RPC_URL --broadcast --verify -vvvv",
+    "deploy:wcsepolia": "forge script script/DeployOrb.s.sol:DeployOrb --rpc-url $WORLDCHAIN_SEPOLIA_RPC_URL --broadcast --verify --verifier blockscout --verifier-url https://worldchain-sepolia.explorer.alchemy.com/api/ -vvvv",
+    "deploy:wcmainnet": "forge script script/DeployOrb.s.sol:DeployOrb --rpc-url $WORLDCHAIN_MAINNET_RPC_URL --broadcast --verify --verifier blockscout --verifier-url https://worldchain-mainnet.explorer.alchemy.com/api/ -vvvv"
+  }
+}
